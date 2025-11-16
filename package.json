@@ -1,0 +1,26 @@
+{
+  "name": "devmate",
+  "version": "1.0.0",
+  "description": "DevMate is focused entirely on developers → a place where developers can connect, hang out, and build strong professional networks.",
+  "homepage": "https://github.com/DHarsh10/DevMate#readme",
+  "bugs": {
+    "url": "https://github.com/DHarsh10/DevMate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHarsh10/DevMate.git"
+  },
+  "license": "ISC",
+  "author": "Harshith",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
