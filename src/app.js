@@ -5,20 +5,15 @@ const User = require('./models/user');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
     console.log("middleware executed");
     res.send("middleware executed")
 })
 
 app.post("/data", (req, res) => {
-    const newUser = new User({
-        firstName: "Poorna",
-        lastName: "Naik",
-        email: "pn@gmail.com",
-        password: "bbb",
-        age: 26
-    })
-
+    const newUser = new User(req.body)
     try{
         newUser.save();
         res.send("data saved successfully");
